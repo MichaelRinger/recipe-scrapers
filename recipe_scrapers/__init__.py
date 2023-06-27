@@ -38,6 +38,7 @@ from .budgetbytes import BudgetBytes
 from .castironketo import CastIronKeto
 from .cdkitchen import CdKitchen
 from .chefkoch import Chefkoch
+from .chefkoch_extended import ChefkochExtended
 from .chefnini import Chefnini
 from .closetcooking import ClosetCooking
 from .comidinhasdochef import ComidinhasDoChef
@@ -274,6 +275,7 @@ SCRAPERS = {
     CastIronKeto.host(): CastIronKeto,
     CdKitchen.host(): CdKitchen,
     Chefkoch.host(): Chefkoch,
+    ChefkochExtended.host(): ChefkochExtended,
     Chefnini.host(): Chefnini,
     ClosetCooking.host(): ClosetCooking,
     ComidinhasDoChef.host(): ComidinhasDoChef,

@@ -192,3 +192,16 @@ def change_keys(obj, convert):
     else:
         return obj
     return new
+
+
+def fraction_to_float(string):
+    for fraction, value in FRACTIONS.items():
+        string = string.replace(fraction, str(value))
+    return string
+
+
+def extract_numbers(string):
+    pattern = r"\d+\.?\d*"
+    numbers = re.findall(pattern, string)
+    numbers = [float(num) if "." in num else int(num) for num in numbers]
+    return numbers
